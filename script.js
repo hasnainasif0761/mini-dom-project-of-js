@@ -45,6 +45,30 @@
 
 
 
+// function checkNum() {
+//     var num = document.getElementById('check').value;
+//     var para = document.getElementById('para');
+
+//     if (num <= 1) para.innerText = 'Your number is Not Prime', para.style.color = 'red';
+//     else {
+//         for (var i = 2; i < num; i++) {
+//             if (num % i === 0) {
+//                 para.innerText = 'Your number is Not Prime';
+//                 para.style.color = 'red';
+//                 break;
+//             }
+//             if (i === num - 1) para.innerText = 'Your number is Prime', para.style.color = 'green';
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
 
 
 
