@@ -28,9 +28,19 @@
 // }
 
 
-function checkNum (){
+// function checkNum (){
+//     var check = document.getElementById('check').value;
+//     var para = document.getElementById('para');
+//     if(check % 2 == 0){
+//         para.innerText = 'Your number is Even';
+//         para.style.color='green'
+//     }else
+//     {
+//         para.innerText = 'Your number is odd';
+//         para.style.color='red'
+//     }
     
-}
+// }
 
 
 
