@@ -1,78 +1,54 @@
-// function Increment (action){
-//     var  count = document.getElementById('count')
+// Counter App
+function counter(action) {
+    var countEl = document.getElementById('count');
+    var value = Number(countEl.innerText);
 
-//     if(action == 'inc'){
-//         count = count.innerText++
-//     }else if(action == 'dec'){
-//         count = count.innerText--
-//     }else if(action == 'res')
-//     {
-//         count = count.innerText = 0
-//     }else
-//     {
-//         alert('Please enter valid number')
-//     }
-    
-// }
+    if (action === 'inc') value++;
+    else if (action === 'dec') value--;
+    else value = 0;
 
+    countEl.innerText = value;
+}
 
-// function showPassword(){
-//     var show = document.getElementById('input');
-    
-//     if(show.type == 'password'){
-//         show.type = 'text'
-//     }else
-//     {
-//         show.type = 'password'
-//     }
-// }
+// Show Password
+function showPassword() {
+    var input = document.getElementById('password');
+    input.type = input.type === 'password' ? 'text' : 'password';
+}
 
+// Even Odd Checker
+function checkEvenOdd() {
+    var num = document.getElementById('evenOddInput').value;
+    var result = document.getElementById('evenOddResult');
 
-// function checkNum (){
-//     var check = document.getElementById('check').value;
-//     var para = document.getElementById('para');
-//     if(check % 2 == 0){
-//         para.innerText = 'Your number is Even';
-//         para.style.color='green'
-//     }else
-//     {
-//         para.innerText = 'Your number is odd';
-//         para.style.color='red'
-//     }
-    
-// }
+    if (num % 2 === 0) {
+        result.innerText = 'Even Number';
+        result.style.color = 'green';
+    } else {
+        result.innerText = 'Odd Number';
+        result.style.color = 'red';
+    }
+}
 
+// Prime Checker
+function checkPrime() {
+    var num = document.getElementById('primeInput').value;
+    var result = document.getElementById('primeResult');
 
+    if (num <= 1) {
+        result.innerText = 'Not Prime';
+        result.style.color = 'red';
+        return;
+    }
 
+    for (var i = 2; i < num; i++) {
+        if (num % i === 0) {
+            result.innerText = 'Not Prime';
+            result.style.color = 'red';
+            return;
+        }
+    }
 
-// function checkNum() {
-//     var num = document.getElementById('check').value;
-//     var para = document.getElementById('para');
-
-//     if (num <= 1) para.innerText = 'Your number is Not Prime', para.style.color = 'red';
-//     else {
-//         for (var i = 2; i < num; i++) {
-//             if (num % i === 0) {
-//                 para.innerText = 'Your number is Not Prime';
-//                 para.style.color = 'red';
-//                 break;
-//             }
-//             if (i === num - 1) para.innerText = 'Your number is Prime', para.style.color = 'green';
-//         }
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    result.innerText = 'Prime Number';
+    result.style.color = 'green';
+}

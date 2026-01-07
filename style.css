@@ -118,7 +118,14 @@
 .container .eye
 {
     position: absolute;
-    right: 66px;
+    right: 175px;
     top: 175px;
     cursor: pointer;
+}
+.container-main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
 }
