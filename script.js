@@ -1,4 +1,4 @@
-// Counter App
+// Counter App Section Start
 function counter(action) {
     var countEl = document.getElementById('count');
     var value = Number(countEl.innerText);
@@ -10,13 +10,13 @@ function counter(action) {
     countEl.innerText = value;
 }
 
-// Show Password
+// Show Password Section Start
 function showPassword() {
     var input = document.getElementById('password');
     input.type = input.type === 'password' ? 'text' : 'password';
 }
 
-// Even Odd Checker
+// Even Odd Checker Section Start
 function checkEvenOdd() {
     var num = document.getElementById('evenOddInput').value;
     var result = document.getElementById('evenOddResult');
@@ -30,7 +30,7 @@ function checkEvenOdd() {
     }
 }
 
-// Prime Checker
+// Prime Checker Section Start
 function checkPrime() {
     var num = document.getElementById('primeInput').value;
     var result = document.getElementById('primeResult');
